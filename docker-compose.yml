@@ -11,6 +11,7 @@ services:
     volumes:
       - .:/workspace:cached
       - rails_cache:/workspace/tmp/cache
+      - bundle:/usr/local/bundle # https://qiita.com/frozenbonito/items/0c515929aba4093e7c47
     ports:
       - 3000:3000
     depends_on:
@@ -32,3 +33,4 @@ services:
 volumes:
   db-volume:
   rails_cache:
+  bundle:
