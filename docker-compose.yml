@@ -6,15 +6,10 @@ services:
       dockerfile: .devcontainer/Dockerfile
     environment:
       BINDING: "0.0.0.0"
-      BUNDLE_PATH: "vendor/bundle"
-      GEM_PATH: "vendor/bundle"
-      GEM_HOME: "vendor/bundle"
-      BUNDLE_GEMFILE:
     command: sleep infinity
     volumes:
       - .:/workspace:cached
       - rails_cache:/workspace/tmp/cache
-      - bundle:/workspace/vendor/bundle
     ports:
       - 3000:3000
     depends_on:
@@ -36,4 +31,3 @@ services:
 volumes:
   db-volume:
   rails_cache:
-  bundle:
