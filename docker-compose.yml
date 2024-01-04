@@ -6,6 +6,7 @@ services:
       dockerfile: .devcontainer/Dockerfile
     environment:
       BINDING: "0.0.0.0"
+      BUNDLE_GEMFILE:
     command: sleep infinity
     volumes:
       - .:/workspace:cached
