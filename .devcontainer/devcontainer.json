@@ -1,0 +1,25 @@
+{
+  "name": "rails_app",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "web",
+  "workspaceFolder": "/workspace",
+
+  "customizations": {
+    "vscode": {
+      "settings": {},
+
+      "extensions": [
+        "editorconfig.editorconfig",
+        "rebornix.ruby",
+        "misogi.ruby-rubocop",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "stylelint.vscode-stylelint"
+      ]
+    }
+  },
+
+  "postCreateCommand": ".devcontainer/entrypoint.sh",
+
+  "remoteUser": "root"
+}
