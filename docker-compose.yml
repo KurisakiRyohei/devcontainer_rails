@@ -2,7 +2,7 @@ version: '3'
 services:
   web:
     build:
-      context: ..
+      context: .
       dockerfile: .devcontainer/Dockerfile
     environment:
       BINDING: "0.0.0.0"
@@ -10,7 +10,7 @@ services:
       BUNDLE_GEMFILE:
     command: sleep infinity
     volumes:
-      - ..:/workspace:cached
+      - .:/workspace:cached
       - rails_cache:/workspace/tmp/cache
       - bundle:/workspace/vendor/bundle
     ports:

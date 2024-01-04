@@ -1,6 +1,6 @@
 {
   "name": "rails_app",
-  "dockerComposeFile": ["docker-compose.yml"],
+  "dockerComposeFile": ["../docker-compose.yml"],
   "service": "web",
   "workspaceFolder": "/workspace",
 
@@ -22,8 +22,4 @@
   "postCreateCommand": ".devcontainer/entrypoint.sh",
 
   "remoteUser": "root",
-
-  "remoteEnv": {
-    "BUNDLE_APP_CONFIG": null
-  }
 }
