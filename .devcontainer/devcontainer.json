@@ -21,5 +21,9 @@
 
   "postCreateCommand": ".devcontainer/entrypoint.sh",
 
-  "remoteUser": "root"
+  "remoteUser": "root",
+
+  "remoteEnv": {
+    "BUNDLE_APP_CONFIG": null
+  }
 }
